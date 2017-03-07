@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="gb2312"%>
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -9,7 +9,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <head>
     <base href="<%=basePath%>">
     
-    <title>µÇÂ¼Ò³Ãæ</title>
+    <title>ç™»å½•é¡µé¢</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -23,20 +23,20 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-    <form action="loginConf.jsp" method="post"><%--Ìø×ªµ½ÅĞ¶ÏÓÃ»§ÊäÈëĞÅÏ¢µÄÒ³Ãæ --%>
+    <form action="loginConf.jsp" method="post"><%--è·³è½¬åˆ°åˆ¤æ–­ç”¨æˆ·è¾“å…¥ä¿¡æ¯çš„é¡µé¢ --%>
     	<table>
     		<tr>
-    			<td>ÓÃ»§Ãû</td>
+    			<td>ç”¨æˆ·å</td>
     			<td><input type="text" name="username"/></td>
     		</tr>
     		<tr>
-    			<td>ÃÜÂë</td>
+    			<td>å¯†ç </td>
     			<td><input type="text" name="upassword"/></td>
     		</tr>
     		<tr>
-    			<td><input type="submit" value="µÇÂ¼"></td>
-    			<td><input type="reset" value="ÖØÖÃ"></td>
-    			<td><a href="regist.jsp">×¢²á</a></td>
+    			<td><input type="submit" value="ç™»å½•"></td>
+    			<td><input type="reset" value="é‡ç½®"></td>
+    			<td><a href="regist.jsp">æ³¨å†Œ</a></td>
     		</tr>
     	</table>
     </form>

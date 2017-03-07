@@ -1,21 +1,21 @@
-<%@page language="java" pageEncoding="gb2312"%>
+<%@page language="java" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
 	<head>
-		<title>µ«¬º≈–∂œ“≥√Ê</title>
+		<title>ÁôªÂΩïÂà§Êñ≠È°µÈù¢</title>
 	</head>
 	
 	<body>
 		<c:choose>
-			<%--»Áπ˚”√ªß ‰»Îµƒ”√ªß√˚ «root£¨‘ÚŒ™∫œ∑®”√ªß√˚ --%>
+			<%--Â¶ÇÊûúÁî®Êà∑ËæìÂÖ•ÁöÑÁî®Êà∑ÂêçÊòØrootÔºåÂàô‰∏∫ÂêàÊ≥ïÁî®Êà∑Âêç --%>
 			<c:when test="${param.username =='root' }">
-				<%--≈–∂œ”√ªß√‹¬Î «∑Ò∫œ∑®£¨∫œ∑®æÕ÷±Ω”Ã¯◊™µΩµ«¬º≥…π¶“≥√Ê --%>
+				<%--Âà§Êñ≠Áî®Êà∑ÂØÜÁ†ÅÊòØÂê¶ÂêàÊ≥ïÔºåÂêàÊ≥ïÂ∞±Áõ¥Êé•Ë∑≥ËΩ¨Âà∞ÁôªÂΩïÊàêÂäüÈ°µÈù¢ --%>
 				<c:if test="${param.upassword =='admin' }">
 					<jsp:forward page="test.html"></jsp:forward>
 				</c:if>
 				<jsp:forward page="loginFailure.jsp"></jsp:forward>
 			</c:when>
-			<%--»Áπ˚”√ªß ‰»Îµƒ”√ªß√˚≤ª «root£¨‘ÚŒ™∑«∑®”√ªß√˚£¨÷±Ω”Ã¯◊™µΩµ«¬Ω ß∞‹“≥√Ê --%>
+			<%--Â¶ÇÊûúÁî®Êà∑ËæìÂÖ•ÁöÑÁî®Êà∑Âêç‰∏çÊòØrootÔºåÂàô‰∏∫ÈùûÊ≥ïÁî®Êà∑ÂêçÔºåÁõ¥Êé•Ë∑≥ËΩ¨Âà∞ÁôªÈôÜÂ§±Ë¥•È°µÈù¢ --%>
 			<c:otherwise>
 				<jsp:forward page="loginFailure.jsp"></jsp:forward>
 			</c:otherwise>
