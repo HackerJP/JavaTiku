@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="gb2312"%>
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -9,8 +9,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <head>
     <base href="<%=basePath%>">
     
-    <title>登录页面</title>
-    
+    <title>My JSP 'index.jsp' starting page</title>
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
 	<meta http-equiv="expires" content="0">    
@@ -19,26 +18,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
-
   </head>
   
   <body>
-    <form action="loginConf.jsp" method="post"><%--跳转到判断用户输入信息的页面 --%>
-    	<table>
-    		<tr>
-    			<td>用户名</td>
-    			<td><input type="text" name="username"/></td>
-    		</tr>
-    		<tr>
-    			<td>密码</td>
-    			<td><input type="text" name="upassword"/></td>
-    		</tr>
-    		<tr>
-    			<td><input type="submit" value="登录"></td>
-    			<td><input type="reset" value="重置"></td>
-    			<td><a href="regist.jsp">注册</a></td>
-    		</tr>
-    	</table>
-    </form>
+    This is my JSP page. <br>
   </body>
 </html>
