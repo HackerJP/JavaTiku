@@ -16,6 +16,7 @@
 	<mvc:resources mapping="/css/**" location="/css/"/>
 	<mvc:resources mapping="/fonts/**" location="/fonts/"/>
 	<mvc:resources mapping="/js/**" location="/js/"/>
+	<mvc:resources mapping="/img/**" location="/img/"/>
 	<mvc:resources mapping="/*.html" location="/"/>
 	
 	<bean id="viewResolver"
@@ -23,4 +24,5 @@
 		<property name="prefix" value="/WEB-INF/jsp/"/>
 		<property name="suffix" value=".jsp"/>
 	</bean>
+	
 </beans>

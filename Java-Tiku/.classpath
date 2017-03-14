@@ -20,5 +20,6 @@
 	<classpathentry kind="lib" path="D:/Java/lib/commons-logging-1.2/commons-logging-1.2-javadoc.jar"/>
 	<classpathentry kind="lib" path="D:/Java/lib/jakarta-taglibs-standard-1.1.2/lib/jstl.jar"/>
 	<classpathentry kind="lib" path="D:/Java/lib/jakarta-taglibs-standard-1.1.2/lib/standard.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/mysql-connector-java-3.1.14-bin.jar"/>
 	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
 </classpath>
