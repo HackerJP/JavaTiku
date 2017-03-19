@@ -170,13 +170,10 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="panel-group" id="accordion">
-							<c:forEach items="${exercises}" var="e_item">
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
-									<p>
-									${ e_item.getEdesc()}
-									</p>
+									<p><c:out value="${exercises.get(0).getEdesc()}" /></p>
 									<a data-toggle="collapse" data-parent="#accordion"
 										href="#collapseOne">
 										点击看答案
@@ -188,11 +185,181 @@
 								</div>
 								<div id="collapseOne" class="panel-collapse collapse in">
 									<div class="panel-body">
-										${e_item.getEanswer()}
+										<c:out value="${exercises.get(0).getEanswer()}" />
 									</div>
 								</div>
 							</div>
-							</c:forEach>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+									<p><c:out value="${exercises.get(1).getEdesc()}" /></p>
+									<a data-toggle="collapse" data-parent="#accordion"
+										href="#collapseTwo">
+										点击看答案
+									</a>
+									<button class="btn btn-default" type="submit">添加</button>
+									<button class="btn btn-default" type="submit">编辑</button>
+									<button class="btn btn-default" type="submit">删除</button>
+									</h4>
+								</div>
+								<div id="collapseTwo" class="panel-collapse collapse in">
+									<div class="panel-body">
+										<c:out value="${exercises.get(1).getEanswer()}" />
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+									<p><c:out value="${exercises.get(2).getEdesc()}" /></p>
+									<a data-toggle="collapse" data-parent="#accordion"
+										href="#collapseThree">
+										点击看答案
+									</a>
+									<button class="btn btn-default" type="submit">添加</button>
+									<button class="btn btn-default" type="submit">编辑</button>
+									<button class="btn btn-default" type="submit">删除</button>
+									</h4>
+								</div>
+								<div id="collapseThree" class="panel-collapse collapse in">
+									<div class="panel-body">
+										<c:out value="${exercises.get(2).getEanswer()}" />
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+									<p><c:out value="${exercises.get(3).getEdesc()}" /></p>
+									<a data-toggle="collapse" data-parent="#accordion"
+										href="#collapseFour">
+										点击看答案
+									</a>
+									<button class="btn btn-default" type="submit">添加</button>
+									<button class="btn btn-default" type="submit">编辑</button>
+									<button class="btn btn-default" type="submit">删除</button>
+									</h4>
+								</div>
+								<div id="collapseFour" class="panel-collapse collapse in">
+									<div class="panel-body">
+										<c:out value="${exercises.get(3).getEanswer()}" />
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+									<p><c:out value="${exercises.get(4).getEdesc()}" /></p>
+									<a data-toggle="collapse" data-parent="#accordion"
+										href="#collapseFive">
+										点击看答案
+									</a>
+									<button class="btn btn-default" type="submit">添加</button>
+									<button class="btn btn-default" type="submit">编辑</button>
+									<button class="btn btn-default" type="submit">删除</button>
+									</h4>
+								</div>
+								<div id="collapseFive" class="panel-collapse collapse in">
+									<div class="panel-body">
+										<c:out value="${exercises.get(4).getEanswer()}" />
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+									<p><c:out value="${exercises.get(5).getEdesc()}" /></p>
+									<a data-toggle="collapse" data-parent="#accordion"
+										href="#collapseSix">
+										点击看答案
+									</a>
+									<button class="btn btn-default" type="submit">添加</button>
+									<button class="btn btn-default" type="submit">编辑</button>
+									<button class="btn btn-default" type="submit">删除</button>
+									</h4>
+								</div>
+								<div id="collapseSix" class="panel-collapse collapse in">
+									<div class="panel-body">
+										<c:out value="${exercises.get(5).getEanswer()}" />
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+									<p><c:out value="${exercises.get(6).getEdesc()}" /></p>
+									<a data-toggle="collapse" data-parent="#accordion"
+										href="#collapseSeven">
+										点击看答案
+									</a>
+									<button class="btn btn-default" type="submit">添加</button>
+									<button class="btn btn-default" type="submit">编辑</button>
+									<button class="btn btn-default" type="submit">删除</button>
+									</h4>
+								</div>
+								<div id="collapseSeven" class="panel-collapse collapse in">
+									<div class="panel-body">
+										<c:out value="${exercises.get(6).getEanswer()}" />
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+									<p><c:out value="${exercises.get(7).getEdesc()}" /></p>
+									<a data-toggle="collapse" data-parent="#accordion"
+										href="#collapseEight">
+										点击看答案
+									</a>
+									<button class="btn btn-default" type="submit">添加</button>
+									<button class="btn btn-default" type="submit">编辑</button>
+									<button class="btn btn-default" type="submit">删除</button>
+									</h4>
+								</div>
+								<div id="collapseEight" class="panel-collapse collapse in">
+									<div class="panel-body">
+										<c:out value="${exercises.get(7).getEanswer()}" />
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+									<p><c:out value="${exercises.get(8).getEdesc()}" /></p>
+									<a data-toggle="collapse" data-parent="#accordion"
+										href="#collapseNine">
+										点击看答案
+									</a>
+									<button class="btn btn-default" type="submit">添加</button>
+									<button class="btn btn-default" type="submit">编辑</button>
+									<button class="btn btn-default" type="submit">删除</button>
+									</h4>
+								</div>
+								<div id="collapseNine" class="panel-collapse collapse in">
+									<div class="panel-body">
+										<c:out value="${exercises.get(8).getEanswer()}" />
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+									<p><c:out value="${exercises.get(9).getEdesc()}" /></p>
+									<a data-toggle="collapse" data-parent="#accordion"
+										href="#collapseTen">
+										点击看答案
+									</a>
+									<button class="btn btn-default" type="submit">添加</button>
+									<button class="btn btn-default" type="submit">编辑</button>
+									<button class="btn btn-default" type="submit">删除</button>
+									</h4>
+								</div>
+								<div id="collapseTen" class="panel-collapse collapse in">
+									<div class="panel-body">
+										<c:out value="${exercises.get(9).getEanswer()}" />
+									</div>
+								</div>
+							</div>
 						</div>
 						<nav aria-label="Page navigation">
 							<ul class="pagination">
@@ -255,6 +422,19 @@
 	$('#wrapper').toggleClass('toggled');
 	});
 	});
+</script>
+<script>
+$(function () { $('#collapseFour').collapse({
+        toggle: false
+    })});
+	$(function () { $('#collapseOne').collapse('show')});
+    $(function () { $('#collapseTwo').collapse('show')});
+    $(function () { $('#collapseThree').collapse('show')});
+    $(function () { $('#collapseFive').collapse('show')});
+    $(function () { $('#collapseSix').collapse('show')});
+    $(function () { $('#collapseSeven').collapse('show')});
+    $(function () { $('#collapseEight').collapse('show')});
+    $(function () { $('#collapseNine').collapse('show')});   
 </script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>

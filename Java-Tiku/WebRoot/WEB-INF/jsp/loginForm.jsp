@@ -30,8 +30,14 @@
                         <label for="checkbox1"></label>
                     </div>
                     <span class="text">Remember me</span>
-                    <button type="submit" class="btn btn-default">登录</button>
+                    <button type="submit" class="btn btn-default btn-lg">登录</button>
                 </div>
+                <div class="form-group">
+            <a href="/Java-Tiku/register" class="btn btn-default btn-lg btn-block">注册</a>
+            </div>
+            <div class="form-group">
+            <a href="#" class="btn btn-default btn-lg btn-block">找回密码</a>
+            </div>
             </form>
         </div>
     </div>

@@ -48,7 +48,7 @@ public class LoginController{
 				exercisesView.add(exercisesList.get(i));
 			}
 			model.addAttribute("exercises", exercisesView);
-			System.out.print(exercisesView.get(1).getEanswer());
+			//System.out.print(exercisesView.get(1).getEanswer());
 			return "main";
 		}
 		return "loginFaillure";
