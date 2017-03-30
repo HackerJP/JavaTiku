@@ -14,11 +14,6 @@
 			<attribute name="owner.project.facets" value="jst.web.jstl"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="D:/Java/lib/jakarta-taglibs-standard-1.1.2.zip"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="D:/Java/lib/commons-logging-1.2/commons-logging-1.2.jar"/>
-	<classpathentry kind="lib" path="D:/Java/lib/commons-logging-1.2/commons-logging-1.2-javadoc.jar"/>
-	<classpathentry kind="lib" path="D:/Java/lib/jakarta-taglibs-standard-1.1.2/lib/jstl.jar"/>
-	<classpathentry kind="lib" path="D:/Java/lib/jakarta-taglibs-standard-1.1.2/lib/standard.jar"/>
 	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
 </classpath>

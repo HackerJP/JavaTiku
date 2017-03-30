@@ -16,11 +16,14 @@
 	<mvc:resources mapping="/css/**" location="/css/"/>
 	<mvc:resources mapping="/fonts/**" location="/fonts/"/>
 	<mvc:resources mapping="/js/**" location="/js/"/>
+	<mvc:resources mapping="/img/**" location="/img/"/>
 	<mvc:resources mapping="/*.html" location="/"/>
 	
+	<!-- 自动为返回的 view 添加前缀和后缀 -->
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/WEB-INF/jsp/"/>
 		<property name="suffix" value=".jsp"/>
 	</bean>
+	
 </beans>
