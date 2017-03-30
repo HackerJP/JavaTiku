@@ -4,6 +4,14 @@
 	xmlns:xsi="http:www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
 	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+	<!-- 设置根上下文配置文件路径 -->
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>
+			/WEB-INF/classes/tiku//config/appContext-*.xml
+		</param-value>
+	</context-param>
+	<!-- 注册DispatcherServlet -->
 	<servlet>
 		<servlet-name>springmvc</servlet-name>
 		<servlet-class>
@@ -18,10 +26,17 @@
 		<!-- load-on-startup设为1 ，启动时装载 Servlet ，并调用 init方法 -->
 		<load-on-startup>1</load-on-startup>
 	</servlet>
+	<!-- 将所有请求交由DispatcherServlet处理 -->
 	<servlet-mapping>
 		<servlet-name>springmvc</servlet-name>
-		<!-- 将所有请求交由DispatcherServlet处理 -->
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
+	<!-- 注册ContextLoaderListener -->
+	<listener>
+		<listener-class>
+		org.springframework.web.context.ContextLoaderListener
+		</listener-class>
+	</listener>
+	
 </web-app>
 	

@@ -22,6 +22,8 @@
 		<![endif]-->
 	</head>
 	<body>
+		<input type="hidden"
+			name="${ _csrf.parameterName }" value="${ _csrf.token }" />
 		<div id="wrapper">
 			<div class="overlay"></div>
 			
@@ -97,7 +99,7 @@
 							<a href="#" class="list-group-item">
 								<span class="glyphicon glyphicon-menu-right"></span>录入题目
 							</a>
-							<a href="loginForm.jsp" class="list-group-item">
+							<a href="@{/logout}" class="list-group-item">
 								<span class="glyphicon glyphicon-log-out"></span> 登出
 							</a>
 						</a>
@@ -364,22 +366,22 @@
 						<nav aria-label="Page navigation">
 							<ul class="pagination">
 								<li>
-									<a href="#" aria-label="Previous">
+									<a href="/Java-Tiku/main?page=${page-1}" aria-label="Previous">
 										<span aria-hidden="true">&laquo;</span>
 									</a>
 								</li>
-								<li><a href="#">1</a></li>
-								<li><a href="#">2</a></li>
-								<li><a href="#">3</a></li>
-								<li><a href="#">4</a></li>
-								<li><a href="#">5</a></li>
-								<li><a href="#">6</a></li>
-								<li><a href="#">7</a></li>
-								<li><a href="#">8</a></li>
-								<li><a href="#">9</a></li>
-								<li><a href="#">10</a></li>
+								<li><a href="/Java-Tiku/main?page=1">1</a></li>
+								<li><a href="/Java-Tiku/main?page=2">2</a></li>
+								<li><a href="/Java-Tiku/main?page=3">3</a></li>
+								<li><a href="/Java-Tiku/main?page=4">4</a></li>
+								<li><a href="/Java-Tiku/main?page=5">5</a></li>
+								<li><a href="/Java-Tiku/main?page=6">6</a></li>
+								<li><a href="/Java-Tiku/main?page=7">7</a></li>
+								<li><a href="/Java-Tiku/main?page=8">8</a></li>
+								<li><a href="/Java-Tiku/main?page=9">9</a></li>
+								<li><a href="/Java-Tiku/main?page=10">10</a></li>
 								<li>
-									<a href="#" aria-label="Next">
+									<a href="/Java-Tiku/main?page=${page+1}" aria-label="Next">
 										<span aria-hidden="true">&raquo;</span>
 									</a>
 								</li>
@@ -424,17 +426,16 @@
 	});
 </script>
 <script>
-$(function () { $('#collapseFour').collapse({
-        toggle: false
-    })});
-	$(function () { $('#collapseOne').collapse('show')});
-    $(function () { $('#collapseTwo').collapse('show')});
-    $(function () { $('#collapseThree').collapse('show')});
-    $(function () { $('#collapseFive').collapse('show')});
-    $(function () { $('#collapseSix').collapse('show')});
-    $(function () { $('#collapseSeven').collapse('show')});
-    $(function () { $('#collapseEight').collapse('show')});
-    $(function () { $('#collapseNine').collapse('show')});   
+	$(function () { $('#collapseFour').collapse('hide')});
+	$(function () { $('#collapseOne').collapse('hide')});
+    $(function () { $('#collapseTwo').collapse('hide')});
+    $(function () { $('#collapseThree').collapse('hide')});
+    $(function () { $('#collapseFive').collapse('hide')});
+    $(function () { $('#collapseSix').collapse('hide')});
+    $(function () { $('#collapseSeven').collapse('hide')});
+    $(function () { $('#collapseEight').collapse('hide')});
+    $(function () { $('#collapseNine').collapse('hide')});   
+    $(function () { $('#collapseTen').collapse('hide')});   
 </script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>

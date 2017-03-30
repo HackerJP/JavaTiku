@@ -7,6 +7,7 @@ public class Exercises implements Serializable{
 	 * 
 	 */
 	private static final long serialVersionUID = 3704626106654751356L;
+	private int e_id;
 	private String e_desc = "";
 	private String e_answer = "";
 	private String e_diff = "";
@@ -32,7 +33,17 @@ public class Exercises implements Serializable{
 		this.e_type = e_type;
 		this.e_point = e_point;
 	}
-	//闂鎻忚堪
+	
+	//题目ID
+	public int getId() {
+		return this.e_id;
+	}
+	
+	public void setId(int e_id) {
+		this.e_id = e_id;
+	}
+	
+	//题目描述
 	public String getEdesc() {
 		return this.e_desc;
 	}
@@ -40,7 +51,7 @@ public class Exercises implements Serializable{
 	public void setEdesc(String e_desc) {
 		this.e_desc = e_desc;
 	}
-	//绛旀
+	//答案
 	public String getEanswer() {
 		return this.e_answer;
 	}
@@ -48,7 +59,7 @@ public class Exercises implements Serializable{
 	public void setEanswer(String e_answer) {
 		this.e_answer = e_answer;
 	}
-	//闅惧害
+	//难度
 	public String getEdiff() {
 		return this.e_diff;
 	}
@@ -56,7 +67,7 @@ public class Exercises implements Serializable{
 	public void setEdiff(String e_diff) {
 		this.e_diff = e_diff;
 	}
-	//棰樼洰绫诲瀷
+	//题目类型
 	public String getEtype() {
 		return this.e_type;
 	}
@@ -64,7 +75,7 @@ public class Exercises implements Serializable{
 	public void setEtype(String e_type) {
 		this.e_type = e_type;
 	}
-	//棰樼洰鑰冪偣
+	//知识点
 	public String getEpoint() {
 		return this.e_point;
 	}
@@ -72,7 +83,7 @@ public class Exercises implements Serializable{
 	public void setEpoint(String e_point) {
 		this.e_point = e_point;
 	}
-	//鍥剧墖url
+	//图片url
 	public String getEimg() {
 		return this.e_img;
 	}
@@ -80,7 +91,7 @@ public class Exercises implements Serializable{
 	public void setEimg(String e_img) {
 		this.e_img = e_img;
 	}
-	//棰樼洰鏍囩
+	//题目标签
 	public String getEtag() {
 		return this.e_tag;
 	}

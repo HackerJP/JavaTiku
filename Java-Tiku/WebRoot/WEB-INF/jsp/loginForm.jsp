@@ -26,8 +26,8 @@
                 </div>
                 <div class="form-group">
                     <div class="main-checkbox">
-                        <input type="checkbox" value="None" id="checkbox1" name="check"/>
-                        <label for="checkbox1"></label>
+                        <input type="checkbox" id="remember_me" name="remember-me"/>
+                        <label for="remember_me"></label>
                     </div>
                     <span class="text">Remember me</span>
                     <button type="submit" class="btn btn-default btn-lg">登录</button>
@@ -38,6 +38,7 @@
             <div class="form-group">
             <a href="#" class="btn btn-default btn-lg btn-block">找回密码</a>
             </div>
+            <input name="_csrf" type="hidden" value="7ca7acb-355326-eeee" />
             </form>
         </div>
     </div>

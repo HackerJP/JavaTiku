@@ -7,45 +7,45 @@ public class User implements Serializable{
 	 */
 	private static final long serialVersionUID = 1L;
 	
-	private String userid = "";
-	private String username = "";
-	private String password = "";
-	private String info = "";
+	private String user_id = "";
+	private String user_name = "";
+	private String user_pw = "";
+	private String user_info = "";
 	
 	public User() {}
 	
 	public User(String userid, String username, String password, String info) {
-		this.userid = userid;
-		this.username = username;
-		this.password = password;
-		this.info = info;		
+		this.user_id = userid;
+		this.user_name = username;
+		this.user_pw = password;
+		this.user_info = info;		
 	}
 	public User(String username, String password) {
-		this.username = username;
-		this.password = password;
+		this.user_name = username;
+		this.user_pw = password;
 	}
 	public String getId() {
-		return userid;
+		return user_id;
 	}
 	public void setId(String userid) {
-		this.userid = userid;
+		this.user_id = userid;
 	}
 	public String getUsername() {
-		return username;
+		return user_name;
 	}
 	public void setUsername(String username) {
-		this.username = username;
+		this.user_name = username;
 	}
 	public String getPassword() {
-		return password;
+		return user_pw;
 	}
 	public void setPassword(String password) {
-		this.password = password;
+		this.user_pw = password;
 	}
 	public String getInfo() {
-		return info;
+		return user_info;
 	}
 	public void setInfo(String info) {
-		this.info = info;
+		this.user_info = info;
 	}
 }
