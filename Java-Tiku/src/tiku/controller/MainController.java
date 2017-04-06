@@ -47,7 +47,7 @@ public class MainController {
 			// 根据page计算出应显示的10条记录的起点值index
 			int index = (page-1)*10;
 			// 通过exercisesDao中的selectByPage方法取出10条记录
-			List<Exercises> exercisesView = exercisesDao.selectByPage(index);
+			List<Exercises> exercisesView = exercisesDao.selectByPage(index, null, null, null);
 			
 			model.addAttribute("exercises", exercisesView);
 		}
@@ -59,4 +59,51 @@ public class MainController {
 			password) {
 		return "longinFaillure";
 }
+	@RequestMapping(value="/edit", method=RequestMethod.GET)
+	public String editGet(HttpServletRequest request, @RequestParam("eid") String eid, Model model) throws IOException {
+		//检查eid是否为空，为空返回空的编辑页面，不为空返回带有相应题目内容的编辑页面
+		if(eid!=""){
+			int e_id = Integer.valueOf(eid);
+			// 通过自定义类得到SqlSession
+			SqlSession sqlSession = CreateSqlSession.getSqlSession();
+			// 实现exercisesDao接口
+			ExercisesDao exercisesDao = sqlSession.getMapper(ExercisesDao.class);
+			//通过题目id获取题目内容
+			Exercises exec = exercisesDao.findById(e_id);
+			model.addAttribute("exec", exec);
+		}
+		return "editPage";
+	}
+	
+	@RequestMapping(value="/edit", method=RequestMethod.POST)
+	public String editPost(HttpServletRequest request, Model model, 
+			@RequestParam("edesc") String edesc, 
+			@RequestParam("eanswer") String eanswer,
+			@RequestParam("ediff") String ediff,
+			@RequestParam("etype") String etype,
+			@RequestParam("epoint") String epoint,
+			@RequestParam("etag") String etag
+			){
+		//构造exercise对象
+		Exercises exec = new Exercises();
+		exec.setEdesc(edesc);
+		exec.setEanswer(eanswer);
+		exec.setEdiff(ediff);
+		exec.setEtype(etype);
+		exec.setEpoint(epoint);
+		exec.setEtag(etag);
+		// 通过自定义类得到SqlSession
+		SqlSession sqlSession;
+		try {
+			sqlSession = CreateSqlSession.getSqlSession();
+			// 实现exercisesDao接口
+			ExercisesDao exercisesDao = sqlSession.getMapper(ExercisesDao.class);
+			//将新题目插入数据库中
+			exercisesDao.insert(exec);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return "editPage";
+	}
 } 

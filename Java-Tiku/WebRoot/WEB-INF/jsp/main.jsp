@@ -27,64 +27,9 @@
 		<div id="wrapper">
 			<div class="overlay"></div>
 			
-			<!-- Sidebar -->
-			<nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
-				<ul class="nav sidebar-nav">
-					<li class="sidebar-brand">
-						<a href="#">
-							Bootstrap 3
-						</a>
-					</li>
-					<li>
-						<a href="#"><i class="fa fa-fw fa-home"></i> Home</a>
-					</li>
-					<li>
-						<a href="#"><i class="fa fa-fw fa-folder"></i> Page one</a>
-					</li>
-					<li>
-						<a href="#"><i class="fa fa-fw fa-file-o"></i> Second page</a>
-					</li>
-					<li>
-						<a href="#"><i class="fa fa-fw fa-cog"></i> Third page</a>
-					</li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-plus"></i> Dropdown <span class="caret"></span></a>
-						<ul class="dropdown-menu" role="menu">
-							<li class="dropdown-header">Dropdown heading</li>
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
-							<li><a href="#">Separated link</a></li>
-							<li><a href="#">One more separated link</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="#"><i class="fa fa-fw fa-bank"></i> Page four</a>
-					</li>
-					<li>
-						<a href="#"><i class="fa fa-fw fa-dropbox"></i> Page 5</a>
-					</li>
-					<li>
-						<a href="#"><i class="fa fa-fw fa-twitter"></i> Last page</a>
-					</li>
-				</ul>
-			</nav>
-			<!-- /#sidebar-wrapper -->
 			<!-- Page Content -->
 			<nav class="navbar navbar-inverse navbar-fixed-top">
-				<div class="container-fluid">
-					<div id="navbar" class="navbar-collapse collapse">
-						<ul class="nav navbar-nav navbar-left" >
-							<li><div id="page-content-wrapper">
-								<button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas" >
-								<span class="hamb-top"></span>
-								<span class="hamb-middle"></span>
-								<span class="hamb-bottom"></span>
-								</button>
-							</div></li>
-						</ul>
-					</div>
-				</div>
+				
 			</nav>
 			<div class="row">
 				<div class="col-md-2">
@@ -115,57 +60,54 @@
 						<tr>
 							<td><p>按难度：</p></td>
 							<td><label class="checkbox-inline">
-								<input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+								<input type="checkbox" name="diff" id="diff1" value="1"> 1
 							</label></td>
 							<td><label class="checkbox-inline">
-								<input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+								<input type="checkbox" name="diff" id="diff2" value="2"> 2
 							</label></td>
 							<td><label class="checkbox-inline">
-								<input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+								<input type="checkbox" name="diff" id="diff3" value="3"> 3
 							</label></td>
 							<td><label class="checkbox-inline">
-								<input type="checkbox" id="inlineCheckbox3" value="option3"> 4
+								<input type="checkbox" name="diff" id="diff4" value="4"> 4
 							</label></td>
 							<td><label class="checkbox-inline">
-								<input type="checkbox" id="inlineCheckbox3" value="option3"> 5
+								<input type="checkbox" name="diff" id="diff5" value="5"> 5
 							</label></td>
 						</tr>
 						<tr>
 							<td><p>按知识点：</p></td>
 							<td><label class="checkbox-inline">
-								<input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+								<input type="checkbox" name="point" id="point1" value="ft"> 前端
 							</label></td>
 							<td><label class="checkbox-inline">
-								<input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+								<input type="checkbox" name="point" id="point2" value="bg"> 后台
 							</label></td>
 							<td><label class="checkbox-inline">
-								<input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+								<input type="checkbox" name="point" id="point3" value="jexp"> Java语法
 							</label></td>
 							<td><label class="checkbox-inline">
-								<input type="checkbox" id="inlineCheckbox3" value="option3"> 4
-							</label></td>
-							<td><label class="checkbox-inline">
-								<input type="checkbox" id="inlineCheckbox3" value="option3"> 5
+								<input type="checkbox" name="point" id="point4" value="oo"> 面向对象
 							</label></td>
 						</tr>
 						<tr>
 							<td><p>按类型：</p></td>
 							<td><label class="checkbox-inline">
-								<input type="checkbox" id="inlineCheckbox1" value="option1"> 选择题
+								<input type="checkbox" name="type" id="tpye1" value="chose"> 选择题
 							</label></td>
 							<td><label class="checkbox-inline">
-								<input type="checkbox" id="inlineCheckbox2" value="option2"> 判断题
+								<input type="checkbox" name="type"  id="type2" value="pd"> 判断题
 							</label></td>
 							<td><label class="checkbox-inline">
-								<input type="checkbox" id="inlineCheckbox3" value="option3"> 填空题
+								<input type="checkbox" name="type"  id="type3" value="tk"> 填空题
 							</label></td>
 							<td><label class="checkbox-inline">
-								<input type="checkbox" id="inlineCheckbox3" value="option3"> 简答题
+								<input type="checkbox" name="type"  id="type4" value="saq"> 简答题
 							</label></td>
 							<td><label class="checkbox-inline">
-								<input type="checkbox" id="inlineCheckbox3" value="option3"> 程序设计题
+								<input type="checkbox" name="type"  id="type5" value="design"> 程序设计题
 							</label></td>
-							<td><button class="btn btn-default" type="submit" style="margin-left: 60px;">确定</button></td>
+							<td><button class="btn btn-default" type="submit" style="margin-left: 30px;" onclick="getPage(1)">确定</button></td>
 						</tr>
 					</tbody>
 				</table>
@@ -173,9 +115,10 @@
 					<div class="col-md-12">
 						<div class="panel-group" id="accordion">
 							<div class="panel panel-default">
-								<div class="panel-heading">
+								<div class="panel-heading" >
 									<h4 class="panel-title">
-									<p><c:out value="${exercises.get(0).getEdesc()}" /></p>
+									<input type="hidden" name="idOne" id="idOne" value="${exercises.get(0).getId()}"/>
+									<p id="descOne"><c:out value="${exercises.get(0).getEdesc()}" /></p>
 									<a data-toggle="collapse" data-parent="#accordion"
 										href="#collapseOne">
 										点击看答案
@@ -187,14 +130,15 @@
 								</div>
 								<div id="collapseOne" class="panel-collapse collapse in">
 									<div class="panel-body">
-										<c:out value="${exercises.get(0).getEanswer()}" />
+										<p id="answerOne"><c:out value="${exercises.get(0).getEanswer()}" /></p>
 									</div>
 								</div>
 							</div>
 							<div class="panel panel-default">
-								<div class="panel-heading">
+								<div class="panel-heading" >
 									<h4 class="panel-title">
-									<p><c:out value="${exercises.get(1).getEdesc()}" /></p>
+									<input type="hidden" name="idTwo" id="idTwo" value="${exercises.get(1).getId()}"/>
+									<p id="descTwo"><c:out value="${exercises.get(1).getEdesc()}" /></p>
 									<a data-toggle="collapse" data-parent="#accordion"
 										href="#collapseTwo">
 										点击看答案
@@ -206,14 +150,15 @@
 								</div>
 								<div id="collapseTwo" class="panel-collapse collapse in">
 									<div class="panel-body">
-										<c:out value="${exercises.get(1).getEanswer()}" />
+										<p id="answerTwo"><c:out value="${exercises.get(1).getEanswer()}" /></p>
 									</div>
 								</div>
 							</div>
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
-									<p><c:out value="${exercises.get(2).getEdesc()}" /></p>
+									<input type="hidden" name="idThree" id="idThree" value="${exercises.get(2).getId()}"/>
+									<p id="descThree"><c:out value="${exercises.get(2).getEdesc()}" /></p>
 									<a data-toggle="collapse" data-parent="#accordion"
 										href="#collapseThree">
 										点击看答案
@@ -225,14 +170,15 @@
 								</div>
 								<div id="collapseThree" class="panel-collapse collapse in">
 									<div class="panel-body">
-										<c:out value="${exercises.get(2).getEanswer()}" />
+										<p id="answerThree"><c:out value="${exercises.get(2).getEanswer()}" /></p>
 									</div>
 								</div>
 							</div>
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
-									<p><c:out value="${exercises.get(3).getEdesc()}" /></p>
+									<input type="hidden" name="idFour" id="idFour" value="${exercises.get(3).getId()}"/>
+									<p id="descFour"><c:out value="${exercises.get(3).getEdesc()}" /></p>
 									<a data-toggle="collapse" data-parent="#accordion"
 										href="#collapseFour">
 										点击看答案
@@ -244,14 +190,15 @@
 								</div>
 								<div id="collapseFour" class="panel-collapse collapse in">
 									<div class="panel-body">
-										<c:out value="${exercises.get(3).getEanswer()}" />
+										<p id="answerFour"><c:out value="${exercises.get(3).getEanswer()}" /></p>
 									</div>
 								</div>
 							</div>
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
-									<p><c:out value="${exercises.get(4).getEdesc()}" /></p>
+									<input type="hidden" name="idFive" id="idFive" value="${exercises.get(4).getId()}"/>
+									<p id="descFive"><c:out value="${exercises.get(4).getEdesc()}" /></p>
 									<a data-toggle="collapse" data-parent="#accordion"
 										href="#collapseFive">
 										点击看答案
@@ -263,14 +210,15 @@
 								</div>
 								<div id="collapseFive" class="panel-collapse collapse in">
 									<div class="panel-body">
-										<c:out value="${exercises.get(4).getEanswer()}" />
+										<p id="answerFive"><c:out value="${exercises.get(4).getEanswer()}" /></p>
 									</div>
 								</div>
 							</div>
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
-									<p><c:out value="${exercises.get(5).getEdesc()}" /></p>
+									<input type="hidden" name="idSix" id="idSix" value="${exercises.get(5).getId()}"/>
+									<p id="descSix"><c:out value="${exercises.get(5).getEdesc()}" /></p>
 									<a data-toggle="collapse" data-parent="#accordion"
 										href="#collapseSix">
 										点击看答案
@@ -282,14 +230,15 @@
 								</div>
 								<div id="collapseSix" class="panel-collapse collapse in">
 									<div class="panel-body">
-										<c:out value="${exercises.get(5).getEanswer()}" />
+										<p id="answerSix"><c:out value="${exercises.get(5).getEanswer()}" /></p>
 									</div>
 								</div>
 							</div>
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
-									<p><c:out value="${exercises.get(6).getEdesc()}" /></p>
+									<input type="hidden" name="idSeven" id="idSeven" value="${exercises.get(6).getId()}"/>
+									<p id="descSeven"><c:out value="${exercises.get(6).getEdesc()}" /></p>
 									<a data-toggle="collapse" data-parent="#accordion"
 										href="#collapseSeven">
 										点击看答案
@@ -301,14 +250,15 @@
 								</div>
 								<div id="collapseSeven" class="panel-collapse collapse in">
 									<div class="panel-body">
-										<c:out value="${exercises.get(6).getEanswer()}" />
+										<p id="answerSeven"><c:out value="${exercises.get(6).getEanswer()}" /></p>
 									</div>
 								</div>
 							</div>
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
-									<p><c:out value="${exercises.get(7).getEdesc()}" /></p>
+									<input type="hidden" name="idEight" id="idEight" value="${exercises.get(7).getId()}"/>
+									<p id="descEight"><c:out value="${exercises.get(7).getEdesc()}" /></p>
 									<a data-toggle="collapse" data-parent="#accordion"
 										href="#collapseEight">
 										点击看答案
@@ -320,14 +270,15 @@
 								</div>
 								<div id="collapseEight" class="panel-collapse collapse in">
 									<div class="panel-body">
-										<c:out value="${exercises.get(7).getEanswer()}" />
+										<p id="answerEight"><c:out value="${exercises.get(7).getEanswer()}" /></p>
 									</div>
 								</div>
 							</div>
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
-									<p><c:out value="${exercises.get(8).getEdesc()}" /></p>
+									<input type="hidden" name="idNine" id="idNine" value="${exercises.get(8).getId()}"/>
+									<p id="descNine"><c:out value="${exercises.get(8).getEdesc()}" /></p>
 									<a data-toggle="collapse" data-parent="#accordion"
 										href="#collapseNine">
 										点击看答案
@@ -339,14 +290,15 @@
 								</div>
 								<div id="collapseNine" class="panel-collapse collapse in">
 									<div class="panel-body">
-										<c:out value="${exercises.get(8).getEanswer()}" />
+										<p id="answerNine"><c:out value="${exercises.get(8).getEanswer()}" /></p>
 									</div>
 								</div>
 							</div>
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
-									<p><c:out value="${exercises.get(9).getEdesc()}" /></p>
+									<input type="hidden" name="idTen" id="idTen" value="${exercises.get(9).getId()}"/>
+									<p id="descTen"><c:out value="${exercises.get(9).getEdesc()}" /></p>
 									<a data-toggle="collapse" data-parent="#accordion"
 										href="#collapseTen">
 										点击看答案
@@ -358,30 +310,30 @@
 								</div>
 								<div id="collapseTen" class="panel-collapse collapse in">
 									<div class="panel-body">
-										<c:out value="${exercises.get(9).getEanswer()}" />
+										<p id="answerTen"><c:out value="${exercises.get(9).getEanswer()}" /></p>
 									</div>
 								</div>
 							</div>
 						</div>
 						<nav aria-label="Page navigation">
 							<ul class="pagination">
-								<li>
-									<a href="/Java-Tiku/main?page=${page-1}" aria-label="Previous">
+								<li class="disabled">
+									<a href="#" aria-label="Previous">
 										<span aria-hidden="true">&laquo;</span>
 									</a>
 								</li>
-								<li><a href="/Java-Tiku/main?page=1">1</a></li>
-								<li><a href="/Java-Tiku/main?page=2">2</a></li>
-								<li><a href="/Java-Tiku/main?page=3">3</a></li>
-								<li><a href="/Java-Tiku/main?page=4">4</a></li>
-								<li><a href="/Java-Tiku/main?page=5">5</a></li>
-								<li><a href="/Java-Tiku/main?page=6">6</a></li>
-								<li><a href="/Java-Tiku/main?page=7">7</a></li>
-								<li><a href="/Java-Tiku/main?page=8">8</a></li>
-								<li><a href="/Java-Tiku/main?page=9">9</a></li>
-								<li><a href="/Java-Tiku/main?page=10">10</a></li>
-								<li>
-									<a href="/Java-Tiku/main?page=${page+1}" aria-label="Next">
+								<li onclick="getPage(1)"><a href="#">1</a></li>
+								<li onclick="getPage(2)"><a href="#">2</a></li>
+								<li onclick="getPage(3)"><a href="#">3</a></li>
+								<li onclick="getPage(4)"><a href="#">4</a></li>
+								<li onclick="getPage(5)"><a href="#">5</a></li>
+								<li onclick="getPage(6)"><a href="#">6</a></li>
+								<li onclick="getPage(7)"><a href="#">7</a></li>
+								<li onclick="getPage(8)"><a href="#">8</a></li>
+								<li onclick="getPage(9)"><a href="#">9</a></li>
+								<li onclick="getPage(10)"><a href="#">10</a></li>
+								<li >
+									<a href="#" aria-label="Next">
 										<span aria-hidden="true">&raquo;</span>
 									</a>
 								</li>
@@ -398,33 +350,7 @@
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>
 <script>window.jQuery || document.write('<script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"><\/script>')</script>
-<script type="text/javascript">
-	$(document).ready(function () {
-	var trigger = $('.hamburger'),
-	overlay = $('.overlay'),
-	isClosed = false;
-	trigger.click(function () {
-	hamburger_cross();
-	});
-	function hamburger_cross() {
-	if (isClosed == true) {
-	overlay.hide();
-	trigger.removeClass('is-open');
-	trigger.addClass('is-closed');
-	isClosed = false;
-	} else {
-	overlay.show();
-	trigger.removeClass('is-closed');
-	trigger.addClass('is-open');
-	isClosed = true;
-	}
-	}
-	
-	$('[data-toggle="offcanvas"]').click(function () {
-	$('#wrapper').toggleClass('toggled');
-	});
-	});
-</script>
+
 <script>
 	$(function () { $('#collapseFour').collapse('hide')});
 	$(function () { $('#collapseOne').collapse('hide')});
@@ -437,7 +363,66 @@
     $(function () { $('#collapseNine').collapse('hide')});   
     $(function () { $('#collapseTen').collapse('hide')});   
 </script>
+
+<script type="text/javascript">
+	var diff = document.getElementsByName('diff' ),
+           maxNums = 1;
+           for(var i in diff){
+              diff[i]. onclick = function (){
+                 var _diffSelect = document.getElementsByName('diff'),
+                 cNums = 0;
+                 for(var i in _diffSelect){
+                   if(i == 'length') break ;
+                   if(_diffSelect[i].checked){
+                      cNums ++;
+                   }
+                }
+                 if(cNums > maxNums){
+                   this.checked = false;
+                    alert('同一栏最多只能选择一项');
+                }
+              }
+           }
+    var point = document.getElementsByName('point' ),
+           maxNums = 1;
+           for(var i in point){
+              point[i]. onclick = function (){
+                 var _pointSelect = document.getElementsByName('point'),
+                 cNums = 0;
+                 for(var i in _pointSelect){
+                   if(i == 'length') break ;
+                   if(_pointSelect[i].checked){
+                      cNums ++;
+                   }
+                }
+                 if(cNums > maxNums){
+                   this.checked = false;
+                    alert('同一栏最多只能选择一项');
+                }
+              }
+           }
+    var type = document.getElementsByName('type' ),
+           maxNums = 1;
+           for(var i in type){
+              type[i]. onclick = function (){
+                 var _typeSelect = document.getElementsByName('type'),
+                 cNums = 0;
+                 for(var i in _typeSelect){
+                   if(i == 'length') break ;
+                   if(_typeSelect[i].checked){
+                      cNums ++;
+                   }
+                }
+                 if(cNums > maxNums){
+                   this.checked = false;
+                    alert('同一栏最多只能选择一项');
+                }
+              }
+           }
+
+</script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<script src="js/pageshow.js"></script>
 </body>
 </html>

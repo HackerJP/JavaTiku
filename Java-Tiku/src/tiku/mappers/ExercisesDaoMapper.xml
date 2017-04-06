@@ -12,7 +12,7 @@
 	</select>
 	
 	<insert id="insert" parameterType="tiku.domain.Exercises">
-		insert into exercises(e_desc, e_answer, e_diff, e_type, e_point, e_img, e_tag) values(#{e_desc}, #{e_answer}, #{e_diff}, #{e_type}, #{e_point}, #{e_img}, #{e_tag})
+		insert into exercises(e_desc, e_answer, e_diff, e_type, e_point, e_tag) values(#{e_desc}, #{e_answer}, #{e_diff}, #{e_type}, #{e_point}, #{e_tag})
 	</insert>
 	
 	<update id="update" parameterType="tiku.domain.Exercises">
@@ -31,7 +31,17 @@
 		select * from users where e_diff=#{e_diff} and e_type=#{e_type} and e_point=#{e_point}
 	</select>
 	
-	<select id="selectByPage" parameterType="int" resultType="tiku.domain.Exercises">
-		select * from exercises limit #{index}, 10
+	<select id="selectByPage" resultType="tiku.domain.Exercises">
+		select * from exercises where statement="active"
+		<if test="e_diff != null and e_diff != ''">
+		and e_diff=#{e_diff}
+		</if>
+		<if test="e_type != null and e_type != ''">
+		and e_type=#{e_type}
+		</if>
+		<if test="e_point != null and e_point != ''">
+		and e_point=#{e_point}
+		</if>
+		limit #{index}, 10
 	</select>
 </mapper>
