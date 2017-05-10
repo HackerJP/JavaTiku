@@ -36,9 +36,12 @@ public class RegisterController {
 		UserDao userDao = sqlSession.getMapper(UserDao.class);
 		User user = new User(userid, username, password, userinfo);
 		if(userDao.findByUserName("username")!=null) {
+			logger.info("Already Exist");
 			return "loginForm";
 		}else {
+			logger.info("New User");
 			userDao.insert(user);
+			sqlSession.commit();
 		}
 		return "loginForm";
 	}

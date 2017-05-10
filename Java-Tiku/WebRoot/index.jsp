@@ -10,6 +10,6 @@
   </head>
   
   <body>
-    <script language='javascript'>document.location = '/Java-Tiku/login'</script>
+    <script language='javascript'>document.location = '/Java-Tiku/visitor'</script>
   </body>
 </html>

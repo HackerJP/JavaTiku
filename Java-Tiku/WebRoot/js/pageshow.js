@@ -149,3 +149,24 @@ function getPage(pageNum){
     		var answerTen = document.getElementById("answerTen");
     		answerTen.innerText = json[9].eanswer;
     	}
+
+$("button[name='edit']").click(function() {
+    var eid = $(this).siblings()[0].value;
+    location.href = "/Java-Tiku/edit?eid=" + eid;
+})
+
+$("button[name='add']").click(function() {
+    var eid = $(this).siblings()[0].value;
+    $.ajax({
+        type: "POST",
+        url: "/Java-Tiku/cartapi",
+        data: {eid: eid, op:"add"},
+        success: function(data){
+            alert("添加成功");
+            //location.href = "/Java-Tiku/edit?eid=";
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+                alert(XMLHttpRequest.status + ":" + XMLHttpRequest.statusText);
+            }
+    })
+})

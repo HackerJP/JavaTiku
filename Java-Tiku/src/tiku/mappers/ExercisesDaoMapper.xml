@@ -11,8 +11,8 @@
 		select * from exercises
 	</select>
 	
-	<insert id="insert" parameterType="tiku.domain.Exercises">
-		insert into exercises(e_desc, e_answer, e_diff, e_type, e_point, e_tag) values(#{e_desc}, #{e_answer}, #{e_diff}, #{e_type}, #{e_point}, #{e_tag})
+	<insert id="insert" parameterType="tiku.domain.Exercises" useGeneratedKeys="true">
+		insert into exercises(e_desc, e_answer, e_diff, e_type, e_point) values(#{e_desc}, #{e_answer}, #{e_diff}, #{e_type}, #{e_point})
 	</insert>
 	
 	<update id="update" parameterType="tiku.domain.Exercises">

@@ -30,4 +30,5 @@
 	<select id="checkUser"  resultType="tiku.domain.User">
 		select * from users where user_name=#{user_name} and user_pw=#{user_pw}
 	</select>
+
 </mapper>
