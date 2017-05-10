@@ -16,8 +16,6 @@
 		<link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">
 		<link rel="stylesheet" href="css/style.css">
 		<script src="js/jquery-1.7.min.js" type="text/javascript"></script>
-		<script type="text/javascript" src="js/quick_links.js"></script>
-		<script type="text/javascript" src="js/common.js"></script>
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
 		<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -52,17 +50,8 @@
 					</a>
 					<div>
 						<div class = "list-group">
-							<a href="#" class="list-group-item">
-								<span class="glyphicon glyphicon-menu-right"></span> 出题
-							</a>
-							<a href="/Java-Tiku/cart" class="list-group-item">
-								<span class="glyphicon glyphicon-menu-right"></span> 已选题目
-							</a>
-							<a href="/Java-Tiku/edit?eid=" class="list-group-item">
-								<span class="glyphicon glyphicon-menu-right"></span>录入题目
-							</a>
-							<a href="Java-Tiku/logout" class="list-group-item">
-								<span class="glyphicon glyphicon-log-out"></span> 登出
+							<a href="login" class="list-group-item">
+								<span class="glyphicon glyphicon-log-in"></span> 登入
 							</a>
 						</a>
 					</div>
@@ -72,13 +61,6 @@
 				<br>
 				<br>
 				<br>
-				
-				
-				
-				
-				
-				
-				
 				<table class="table">
 					<tbody>
 						<tr>
@@ -135,9 +117,6 @@
 						</tr>
 					</tbody>
 				</table>
-				
-				
-				
 				<div class="row">
 					<div class="col-md-12">
 						<div class="panel-group" id="accordion">
@@ -150,9 +129,6 @@
 										href="#collapseOne">
 										点击看答案
 									</a>
-									<button class="btn btn-default" type="submit" name="add">添加</button>
-									<button class="btn btn-default" type="submit" name="edit">编辑</button>
-									<button class="btn btn-default" type="submit" name="delete">删除</button>
 									</h4>
 								</div>
 								<div id="collapseOne" class="panel-collapse collapse in">
@@ -170,9 +146,6 @@
 										href="#collapseTwo">
 										点击看答案
 									</a>
-									<button class="btn btn-default" type="submit" name="add">添加</button>
-									<button class="btn btn-default" type="submit" name="edit">编辑</button>
-									<button class="btn btn-default" type="submit" name="delete">删除</button>
 									</h4>
 								</div>
 								<div id="collapseTwo" class="panel-collapse collapse in">
@@ -190,9 +163,6 @@
 										href="#collapseThree">
 										点击看答案
 									</a>
-									<button class="btn btn-default" type="submit" name="add">添加</button>
-									<button class="btn btn-default" type="submit" name="edit">编辑</button>
-									<button class="btn btn-default" type="submit" name="delete">删除</button>
 									</h4>
 								</div>
 								<div id="collapseThree" class="panel-collapse collapse in">
@@ -210,9 +180,6 @@
 										href="#collapseFour">
 										点击看答案
 									</a>
-									<button class="btn btn-default" type="submit" name="add">添加</button>
-									<button class="btn btn-default" type="submit" name="edit">编辑</button>
-									<button class="btn btn-default" type="submit" name="delete">删除</button>
 									</h4>
 								</div>
 								<div id="collapseFour" class="panel-collapse collapse in">
@@ -230,9 +197,6 @@
 										href="#collapseFive">
 										点击看答案
 									</a>
-									<button class="btn btn-default" type="submit" name="add">添加</button>
-									<button class="btn btn-default" type="submit" name="edit">编辑</button>
-									<button class="btn btn-default" type="submit" name="delete">删除</button>
 									</h4>
 								</div>
 								<div id="collapseFive" class="panel-collapse collapse in">
@@ -250,9 +214,6 @@
 										href="#collapseSix">
 										点击看答案
 									</a>
-									<button class="btn btn-default" type="submit" name="add">添加</button>
-									<button class="btn btn-default" type="submit" name="edit">编辑</button>
-									<button class="btn btn-default" type="submit" name="delete">删除</button>
 									</h4>
 								</div>
 								<div id="collapseSix" class="panel-collapse collapse in">
@@ -270,9 +231,6 @@
 										href="#collapseSeven">
 										点击看答案
 									</a>
-									<button class="btn btn-default" type="submit" name="add">添加</button>
-									<button class="btn btn-default" type="submit" name="edit">编辑</button>
-									<button class="btn btn-default" type="submit" name="delete">删除</button>
 									</h4>
 								</div>
 								<div id="collapseSeven" class="panel-collapse collapse in">
@@ -290,9 +248,6 @@
 										href="#collapseEight">
 										点击看答案
 									</a>
-									<button class="btn btn-default" type="submit" name="add">添加</button>
-									<button class="btn btn-default" type="submit" name="edit">编辑</button>
-									<button class="btn btn-default" type="submit" name="delete">删除</button>
 									</h4>
 								</div>
 								<div id="collapseEight" class="panel-collapse collapse in">
@@ -310,9 +265,6 @@
 										href="#collapseNine">
 										点击看答案
 									</a>
-									<button class="btn btn-default" type="submit" name="add">添加</button>
-									<button class="btn btn-default" type="submit" name="edit">编辑</button>
-									<button class="btn btn-default" type="submit" name="delete">删除</button>
 									</h4>
 								</div>
 								<div id="collapseNine" class="panel-collapse collapse in">
@@ -330,9 +282,6 @@
 										href="#collapseTen">
 										点击看答案
 									</a>
-									<button class="btn btn-default" type="submit" name="add">添加</button>
-									<button class="btn btn-default" type="submit" name="edit">编辑</button>
-									<button class="btn btn-default" type="submit" name="delete">删除</button>
 									</h4>
 								</div>
 								<div id="collapseTen" class="panel-collapse collapse in">
@@ -366,23 +315,6 @@
 								</li>
 							</ul>
 						</nav>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-2">
-				<div class="mui-mbar-tabs">
-					<div class="quick_link_mian">
-						<div class="quick_links_panel">
-							<div id="quick_links" class="quick_links">
-				
-								<li id="shopCart">
-									<a href="#" class="message_list" ><i class="message"></i><div class="span">已选</div></a>
-								</li>
-				
-							</div>
-			
-						</div>
-						<div id="quick_links_pop" class="quick_links_pop hide"></div>
 					</div>
 				</div>
 			</div>
@@ -465,55 +397,7 @@
            }
 
 </script>
-<script type="text/javascript" src="js/parabola.js"></script>
-<script type="text/javascript">
-	$(".quick_links_panel li").mouseenter(function(){
-		$(this).children(".mp_tooltip").animate({left:-92,queue:true});
-		$(this).children(".mp_tooltip").css("visibility","visible");
-		$(this).children(".ibar_login_box").css("display","block");
-	});
-	$(".quick_links_panel li").mouseleave(function(){
-		$(this).children(".mp_tooltip").css("visibility","hidden");
-		$(this).children(".mp_tooltip").animate({left:-121,queue:true});
-		$(this).children(".ibar_login_box").css("display","none");
-	});
-	$(".quick_toggle li").mouseover(function(){
-		$(this).children(".mp_qrcode").show();
-	});
-	$(".quick_toggle li").mouseleave(function(){
-		$(this).children(".mp_qrcode").hide();
-	});
 
-// 元素以及其他一些变量
-var eleFlyElement = document.querySelector("#flyItem"), eleShopCart = document.querySelector("#shopCart");
-var numberItem = 0;
-// 抛物线运动
-var myParabola = funParabola(eleFlyElement, eleShopCart, {
-	speed: 400, //抛物线速度
-	curvature: 0.0008, //控制抛物线弧度
-	complete: function() {
-		eleFlyElement.style.visibility = "hidden";
-		eleShopCart.querySelector("span").innerHTML = ++numberItem;
-	}
-});
-// 绑定点击事件
-if (eleFlyElement && eleShopCart) {
-	
-	[].slice.call(document.getElementsByClassName("btn-default")).forEach(function(button) {
-		button.addEventListener("click", function(event) {
-			// 滚动大小
-			var scrollLeft = document.documentElement.scrollLeft || document.body.scrollLeft || 0,
-			    scrollTop = document.documentElement.scrollTop || document.body.scrollTop || 0;
-			eleFlyElement.style.left = event.clientX + scrollLeft + "px";
-			eleFlyElement.style.top = event.clientY + scrollTop + "px";
-			eleFlyElement.style.visibility = "visible";
-			
-			// 需要重定位
-			myParabola.position().move();			
-		});
-	});
-}
-</script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
 <script src="js/pageshow.js"></script>

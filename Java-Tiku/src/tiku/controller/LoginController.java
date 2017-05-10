@@ -48,13 +48,20 @@ public class LoginController{
 		// 通过自定义类得到SqlSession
 		SqlSession sqlSession = CreateSqlSession.getSqlSession();
 		UserDao userDao = sqlSession.getMapper(UserDao.class);
-
-       if(userDao.checkUser(username, password)!=null) {
-    	   //model.addAttribute("username", username);
-    	   model.addAttribute("page", 1);
-    	   // 释放资源
-           sqlSession.close();
-    	   return "redirect:/main";
+		//获取用户对象
+		User user_ob = userDao.checkUser(username, password);
+       if(user_ob!=null) {
+    	   if(user_ob.getInfo().equals("admin")){
+    		 //model.addAttribute("username", username);
+        	   model.addAttribute("page", 1);
+        	   // 释放资源
+               sqlSession.close();
+        	   return "redirect:/main";
+    	   }
+    	   else if(user_ob.getInfo().equals("user")){
+    		   return "redirect:/common";
+    	   }
+    	   else{return "loginFaillure";}
        }
        
        // 释放资源

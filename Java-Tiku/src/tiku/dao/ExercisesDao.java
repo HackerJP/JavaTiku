@@ -16,7 +16,7 @@ public interface ExercisesDao {
 	
 	public List<Exercises> selectAll();  
 	
-	public List<Exercises> selectByPage(int index);   // 根据第index到index+10行的数据
+	public List<Exercises> selectByPage(@Param("index")int index, @Param("e_diff")String e_diff, @Param("e_type")String e_type, @Param("e_point")String e_point);   // 根据第index到index+10行的数据
 	
 	public List<Exercises> findByDTP(Exercises exercises);  // 根据难度(e_diff)，类型(e_type)，知识点(e_point)查找数据
 	

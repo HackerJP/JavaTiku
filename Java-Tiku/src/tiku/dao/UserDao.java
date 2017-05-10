@@ -21,4 +21,5 @@ public interface UserDao {
 	public User findByUserName(String userName);
 	
 	public User checkUser(@Param("user_name")String userName, @Param("user_pw")String password);
+	
 }
